@@ -20,5 +20,4 @@ public class Chap9Ex3 {
 		Hello hello1 = new Hello("こんにちわ!", 5);
 		hello1.disp();
 	}
-
 }
