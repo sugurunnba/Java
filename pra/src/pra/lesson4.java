@@ -1,8 +1,6 @@
 package pra;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class lesson4 {
 
@@ -151,18 +149,116 @@ public class lesson4 {
 //		}
 
 //		4-12
-		BufferedReader br = new BufferedReader(
-				new InputStreamReader(System.in));
-		System.out.println("数字を入力ください。入力した数字を足し合わせて、100を超えると入力を止めます");
-		int totalInt = 0;
-		for(int i = 1; totalInt <= 100; i++) {
-			System.out.println(i + "回目の入力");
-			int x = Integer.parseInt(br.readLine());
-			totalInt += x;
-			if(totalInt > 100) {
-				System.out.println("合計が100を超えたので入力を終了します。合計は" + totalInt + "です");
-			}
-		}
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		System.out.println("数字を入力ください。入力した数字を足し合わせて、100を超えると入力を止めます");
+//		int totalInt = 0;
+//		for(int i = 1; totalInt <= 100; i++) {
+//			System.out.println(i + "回目の入力");
+//			int x = Integer.parseInt(br.readLine());
+//			totalInt += x;
+//			if(totalInt > 100) {
+//				System.out.println("合計が100を超えたので入力を終了します。合計は" + totalInt + "です");
+//			}
+//		}
+
+//		4-13
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int strike = 0;
+//		int ball = 0;
+//		while(strike < 3 && ball < 4) {
+//			System.out.println("ストライクかボールを入力ください(ストライク=1 or ボール=2)");
+//			int judge = Integer.parseInt(br.readLine());
+//			if(judge == 1) {
+//				strike++;
+//			} else if(judge == 2) {
+//				ball++;
+//			}
+//		}
+//		System.out.println(ball + "ボール," + strike + "ストライク");
+
+//		4-14
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int strike = 0;
+//		int ball = 0;
+//		while(strike < 3 && ball < 4) {
+//			System.out.println("ストライクかボールかファウルを入力ください(ストライク=1 or ボール=2 or ファウル=3)");
+//			int x = Integer.parseInt(br.readLine());
+//			if(x == 1) {
+//				strike++;
+//			} else if(x == 2) {
+//				ball++;
+//			} else if(x == 3) {
+//				if(strike <= 1) {
+//					strike++;
+//				}
+//			}
+//		}
+//		System.out.println(ball + "ボール," + strike + "ストライク");
+
+//		4-15
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		System.out.println("数字を入力ください。素数であるかを判定します。");
+//		int x = Integer.parseInt(br.readLine());
+//		if((x % 2 == 0) || (x % 3 == 0) || (x % 5 == 0) || (x % 7 == 0)) {
+//			System.out.println(x + "は素数ではない");
+//		} else {
+//			System.out.println(x + "は素数です");
+//		}
+
+//		4-16
+
+//		4-17
+//		for(int x = 1; x <= 9; x++) {
+//			for(int y = 1; y <= 9; y++) {
+//				System.out.printf("%2d", x * y);
+//			}
+//			System.out.println();
+//		}
+
+//		4-18
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int total = 0;
+//		System.out.println("数字を入力ください。0を入力すると、それまでに入力した数字の合計を表示します。");
+//		for(;;) {
+//			int x = Integer.parseInt(br.readLine());
+//			if(x == 0) {
+//				break;
+//			}
+//			total += x;
+//		}
+//		System.out.println("合計は" + total + "です。");
+
+//		4-19
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		System.out.println("数字を入力ください。0を入力すると、それまでに入力した数字の平均値(切り捨て)を表示します。");
+//		int total = 0;
+//		int average = 0;
+//		int count = 0;
+//		for(;;) {
+//			int x = Integer.parseInt(br.readLine());
+//			if(x == 0) {
+//				break;
+//			}
+//			count++;
+//			total += x;
+//		}
+//		average = total / count;
+//		System.out.println("平均値は" + (double)average + "です。");
+		
+//		4-20
+		
+
+
+
+
+
+
 	}
 }
 //System.out.println();
