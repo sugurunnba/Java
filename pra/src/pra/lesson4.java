@@ -250,10 +250,64 @@ public class lesson4 {
 //		}
 //		average = total / count;
 //		System.out.println("平均値は" + (double)average + "です。");
-		
-//		4-20
-		
 
+//		4-20
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int x = Integer.parseInt(br.readLine());
+//		for(int i = 0; i < x; i++) {
+//			for(int j = 0; j <= i; j++) {
+//				System.out.print("$");
+//			}
+//			System.out.println();
+//		}
+
+//		4-21
+//		?
+//		BufferedReader br = new BufferedReader(
+//                        new InputStreamReader( System.in ) );
+//		int size = Integer.parseInt( br.readLine() );
+//
+//		for( int i = 0 ; i < size ; i++ )
+//		{
+//		    for( int j = 0 ; j < size ; j++ )
+//		    {
+//		        if( i == j || ( size - i - 1 ) == j )
+//		            System.out.print( "X" );
+//		        else
+//		            System.out.print( " " );
+//		    }
+//
+//		    System.out.println( "" );
+//		}
+
+//		4-22
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader( System.in ) );
+//		int x = 0;
+//		int y = 1;
+//		int total = 0;
+//
+//		System.out.println(x);
+//		System.out.println(y);
+//		while(total < 1000) {
+//			System.out.println(total);
+//			total = x + y;
+//			x = y;
+//			y = total;
+//		}
+//		↓
+//		↓
+//		↓模範解答
+		int x = 0;
+		int y = 1;
+		int z = x + y;
+		while(x <= 1000) {
+			System.out.println(x + ",");
+			x = y;
+			y = z;
+			z = x + y;
+		}
 
 
 
